@@ -58,7 +58,7 @@ CCOLD  = $(CC)
 OMPFLAG = -fopenmp -DUSE_OMP  # for OpenMP
 CCMIN  = $(CEXE) -fPIC $(CPROF)
 CCD    = $(CC) $(CCDEBS)
-IFLAGS = -I. -I/usr/X11R6/include $(I_USE_ACML)
+IFLAGS = -I. -I/usr/X11R6/include -I$(TOP)/src/nifti/niftilib -I$(TOP)/src/nifti/nifticdf $(I_USE_ACML)
 #-I/usr/src/linux-headers-3.0.0-17/include/linux -I/usr/src/linux-headers-3.0.0-17/include $(I_USE_ACML)
 LFLAGS = -L. -L/usr/X11R6/lib64 $(L_USE_ACML)
 
